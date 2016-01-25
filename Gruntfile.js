@@ -386,6 +386,20 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+    buildcontrol: {
+    options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built ui invetario from commit on branch'
+    },
+    heroku: {
+        options: {
+            remote: 'git@heroku.com:tw-ui-inventario.git',
+            branch: 'master'
+        }
+    }
     }
   });
 
@@ -441,4 +455,5 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+  grunt.registerTask('deploy', ['buildcontrol']);
 };

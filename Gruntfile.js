@@ -136,17 +136,21 @@ module.exports = function (grunt) {
 
     // Empties folders to start fresh
     clean: {
-      dist: {
+       dist: {
         files: [{
-          dot: true,
-          src: [
-            '.tmp',
-            '<%= yeoman.dist %>/{,*/}*',
-            '!<%= yeoman.dist %>/.git{,*/}*'
-          ]
+            dot: true,
+            src: [
+                '.tmp',
+                '<%= yeoman.dist %>/*',
+                '!<%= yeoman.dist %>/.git{,*/}*',
+                '!<%= yeoman.dist %>/Procfile',
+                '!<%= yeoman.dist %>/package.json',
+                '!<%= yeoman.dist %>/web.js',
+                '!<%= yeoman.dist %>/node_modules'
+           ]
         }]
-      },
-      server: '.tmp'
+    },
+    server: '.tmp'
     },
 
     // Add vendor prefixed styles

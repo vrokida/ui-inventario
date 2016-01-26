@@ -5,9 +5,7 @@
   padding: 0.2em 0;
 }
 
-body {
-  padding: 0;
-}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -20,7 +18,6 @@ body {
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -60,9 +57,9 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1300px) {
   .container {
-    max-width: 730px;
+    max-width: 1300px;
   }
 
   /* Remove the padding we set earlier */

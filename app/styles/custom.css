@@ -1,0 +1,22 @@
+body{
+    padding: 0px;
+}
+.navbar{
+    margin-bottom: 0px;
+}
+.navbar-header{
+    width: 170px;
+}
+
+.footer-sln{
+    position: absolute;
+    bottom: 0px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    width: 100%;
+    background: #F8F8F8;
+}
+.row{
+    margin-top: 10px;
+}
